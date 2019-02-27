@@ -14,11 +14,6 @@ steps:
   displayName: Copy provisioning scripts
   inputs:
     SourceFolder: ACRProvisioning
-    Contents: |
-     **\*.json
-     !bin/**/*
-     **\*.ps1
-     !bin/**/*
     TargetFolder: '$(build.artifactstagingdirectory)/iac'
 
 - task: PublishBuildArtifacts@1
